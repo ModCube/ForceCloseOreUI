@@ -388,8 +388,8 @@ std::string getUWPModsDir() {
       appendUniquePath(paths, fs::path(mods_path) / kModDirName);
   }
 #endif
-        appendUniquePath(paths, fs::path("/sdcard/games") / kModDirName);
-        appendUniquePath(paths, fs::path("/storage/emulated/0/games") / kModDirName);
+        appendUniquePath(paths, fs::path("/sdcard/Android/media/org.levimc.launcher/mods") / kModDirName);
+        appendUniquePath(paths, fs::path("/storage/emulated/0/Android/media/org.levimc.launcher/mods") / kModDirName);
 #endif
         return paths;
     }
